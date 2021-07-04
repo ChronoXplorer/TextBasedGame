@@ -9,7 +9,7 @@ public class GameScript : MonoBehaviour
     
     void Start()
     {
-        
+        textComponent.text = ("Testing a text for a test");
     }
     
     void Update()
