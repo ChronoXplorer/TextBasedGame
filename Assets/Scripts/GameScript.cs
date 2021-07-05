@@ -6,10 +6,14 @@ using UnityEngine.UI;
 public class GameScript : MonoBehaviour
 {
     [SerializeField] Text textComponent;
-    
+    [SerializeField] State startingState;
+
+    State state;
+
     void Start()
     {
-        textComponent.text = ("Testing a text for a test");
+        state = startingState;
+        textComponent.text = state.GetStoryState();
     }
     
     void Update()
